@@ -11,3 +11,17 @@ Step1 :
 
 Step 2 :
 <img src="https://github.com/shikhar2817/WordCloud/blob/main/img/2.jpg" >
+
+Step 3 :
+<img src="https://github.com/shikhar2817/WordCloud/blob/main/img/3.jpg" >
+
+Step 4 :
+<img src="https://github.com/shikhar2817/WordCloud/blob/main/img/4.jpg" >
+
+Step 4 :
+<img src="https://github.com/shikhar2817/WordCloud/blob/main/img/5.jpg" >
+
+Result :
+<img src="https://github.com/shikhar2817/WordCloud/blob/main/img/result_image.jpg" >
+
+
