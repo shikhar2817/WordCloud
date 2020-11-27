@@ -1,0 +1,57 @@
+An Ethernet frame is preceded by a preamble and start frame delimiter 
+(SFD), which are both part of the Ethernet packet at the physical layer. 
+Each Ethernet frame starts with an Ethernet header, which contains destination 
+and source MAC addresses as its first two fields. The middle section of the 
+frame is payload data including any headers for other protocols (for example, 
+Internet Protocol) carried in the frame. The frame ends with a frame 
+check sequence (FCS), which is a 32-bit cyclic redundancy check used 
+to detect any in-transit corruption of data.
+The preamble consists of a 56-bit (seven-byte) pattern of alternating 1 
+and 0 bits, allowing devices on the network to easily synchronize their 
+receiver clocks, providing bit-level synchronization. It is followed by 
+the SFD to provide byte-level synchronization and to mark a new incoming frame. For Ethernet variants transmitting serial bits instead of larger symbols, the (uncoded) on-the-wire bit pattern for the preamble together with the SFD portion of the frame is 10101010 10101010 10101010 10101010 10101010 10101010 10101010 10101011;[3]:sections 4.2.5 and 3.2.2 The bits are transmitted in order, from left to right.[3]:sections 4.2.5
+The SFD is the eight-bit (one-byte) value that marks the end of the 
+preamble, which is the first field of an Ethernet packet, and indicates 
+the beginning of the Ethernet frame. The SFD is designed to break the 
+bit pattern of the preamble and signal the start of the actual frame.
+[3]:section 4.2.5 The SFD is immediately followed by the destination 
+MAC address, which is the first field in an Ethernet frame. SFD is the 
+binary sequence 10101011 (0xAB, decimal 171 in the Ethernet LSB first 
+bit ordering).[3]:sections 3.2.2, 3.3 and 4.2.6
+Physical layer transceiver circuitry (PHY for short) is required to 
+connect the Ethernet MAC to the physical medium. The connection between 
+a PHY and MAC is independent of the physical medium and uses a bus from 
+the media independent interface family (MII, GMII, RGMII, SGMII, XGMII).
+ Fast Ethernet transceiver chips utilize the MII bus, which is a four-bit
+  (one nibble) wide bus, therefore the preamble is represented as 
+  14 instances of 0xA, and the SFD is 0xA 0xB (as nibbles). Gigabit 
+  Ethernet transceiver chips use the GMII bus, which is an eight-bit 
+  wide interface, so the preamble sequence followed by the SFD would be 
+  0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAA 0xAB (as bytes).
+In the language of visual design, a tag cloud (or word cloud) is one 
+kind of "weighted list", as commonly used on geographic maps to 
+represent the relative size of cities in terms of relative typeface 
+size. An early printed example of a weighted list of English keywords
+ was the "subconscious files" in Douglas Coupland's Microserfs (1995). 
+ A German appearance occurred in 1992.[4]
+The specific visual form and common use of the term "tag cloud" rose to 
+prominence in the first decade of the 21st century as a widespread feature 
+of early Web 2.0 websites and blogs, used primarily to visualize the 
+frequency distribution of keyword metadata that describe website 
+content, and as a navigation aid.
+The first tag clouds on a high-profile website were on the photo 
+sharing site Flickr, created by Flickr co-founder and interaction 
+designer Stewart Butterfield in 2004. That implementation was based 
+on Jim Flanagan's Search Referral Zeitgeist,[5] a visualization of
+Web site referrers. Tag clouds were also popularized around the 
+same time by Del.icio.us and Technorati, among others.
+Oversaturation of the tag cloud method and ambivalence about its 
+utility as a web-navigation tool led to a noted decline of usage 
+among these early adopters.[6] (Flickr would later "apologize" to 
+the web-development community in their five-word acceptance speech 
+for the 2006 "Best Practices" Webby Award, where they simply stated 
+"sorry about the tag clouds.")[7]
+A second generation of software development discovered a wider 
+diversity of uses for tag clouds as a basic visualization method
+for text data. Several extensions of tag clouds have been proposed 
+in this context.
